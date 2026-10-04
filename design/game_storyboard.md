@@ -7,7 +7,7 @@
 
 **Theme:**
 
-TODO: Name and briefly describe your game's theme.
+Haunted Hotel, a spooky Halloween-themed adventure game set inside an abandoned hotel filled with mysterious rooms.
 
 **Storyline:**
 
@@ -15,17 +15,18 @@ TODO: In one short paragraph, explain the setting, the player's goal, the items
 the player must gather, and the threat created by the villain.
 
 ## Rooms
+The player is trapped inside a haunted hotel on Halloween night and must explore the hotel to collect protective objects before facing a vampire. The player must gather garlic, a potion, a spell book, a candle, a mirror, and a coffin key. The vampire is sleeping inside a coffin in one of the hotel rooms, and the player must collect all of the items before entering the vampire's room. If the player encounters the vampire before collecting all of the items, the player loses the game.
 
 Project One requires a minimum of eight rooms.
 
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
+1. Hotel Lobby: Start room
+2. Dining Hall
+3. Kitchen
+4. Library
+5. Ballroom
+6. Guest Bedroom
+7. Basement
+8. Coffin Room: Villain room
 
 Add more rooms if your design needs them.
 
@@ -34,19 +35,19 @@ Add more rooms if your design needs them.
 With the minimum eight-room design, Project One requires at least six items.
 Every room except the start room and villain room must contain one item.
 
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
+1. Garlic
+2. Potion
+3. Spell Book
+4. Candle
+5. Mirror
+6.Coffin Key
 
 If you add rooms beyond the minimum, add an item for every additional room
 except the start room and villain room.
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+The villain is a vampire that is sleeping inside a coffin in the Coffin Room. The player must collect all six items before entering the room where the vampire is located.
 
 ## Storyboard and Map Check
 
