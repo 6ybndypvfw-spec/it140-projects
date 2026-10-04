@@ -10,16 +10,49 @@
 # TODO 1: Identify the information the movement process needs.
 # Consider the player's current room and movement command.
 
+SET current_room TO "Hotel Lobby"
+SET movement_command TO ""
+SET game_over TO FALSE
+
 # TODO 2: Prompt for and receive the player's movement command.
+
+WHILE game_over = FALSE
+    OUTPUT "Enter a direction (north, south, east, or west):"
+    INPUT movement_command
 
 # TODO 3: Validate whether the requested movement is possible from the
 # current room. Show the decision clearly.
 
+IF movement_command is a valid direction from current_room THEN
+
+
 # TODO 4: Describe what happens when the movement command is valid.
 # Include the room update and player output.
 
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
 
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+        SET current_room TO the room connected to current_room in movement_command
+        OUTPUT "You moved to " + current_room
+
+        IF current_room = "Coffin Room" THEN
+            IF all six items have been collected THEN
+                OUTPUT "You found the vampire after collecting all of the items. You win!"
+                SET game_over TO TRUE
+            ELSE
+                OUTPUT "You entered the Coffin Room before collecting all of the items. You lose!"
+                SET game_over TO TRUE
+            END IF
+        END IF
+
+    ELSE
+
+        # TODO 5: Describe what happens when the movement command is invalid.
+        # Include the output the player should receive.
+
+        OUTPUT "You cannot go that direction from " + current_room
+
+    END IF
+
+    # TODO 6: Show how movement fits into repeated gameplay.
+    # The final game continues accepting commands until a required ending occurs.
+
+END WHILE
